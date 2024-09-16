@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilos.css">
     <title>ACTIVIDAD TAREAS</title>
 </head>
+
 <body>
+    <div class="content">
+        <div class="titulo">
+            <h1>Tareas</h1>
+        </div>
 
-    <h1>Tareas</h1>
+        <div class="form">
+            <form id="addTarea">
+                <input type="text" id="newTarea" placeholder="Nueva tarea" required>
+            <div class="botones">
+                <button class="btn" type="submit">Agregar</button>
+            </div>
+                
 
-    <form id="addTarea">
-        <input type="text" id="newTarea" placeholder="Nueva tarea" required>
-        <button type="submit">Agregar Tarea</button>
-    </form>
+            </form>
+        </div>
 
-    <ul id="listaTareas"></ul>
+        <div class="lista">
+            <ul id="listaTareas"></ul>
+        </div>
+
+    </div>
 
     <script src="./src/js/index.js"></script>
 </body>
+
 </html>
